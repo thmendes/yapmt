@@ -51,7 +51,6 @@
 
 <script>
 import Project from './components/Project';
-import axios from 'axios';
 import bus from './bus';
 
 export default {
