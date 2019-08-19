@@ -136,6 +136,7 @@
         axios.post('/api/project/' + this.project.id + '/task', task)
           .then((response) =>{
             this.project = response.data;
+            this.syncTasksStatus();
             this.resetForm();
           });
       },
