@@ -83,8 +83,6 @@
   import Task from './Task';
   import status from './Status'
 
-  const ownerRequired = (value) => value.indexOf('@') >= 0;
-
   export default {
     components:{
       Task,
@@ -135,7 +133,7 @@
             'Name': this.project.name,
             'Tasks': this.project.tasks
           })
-          .then((response) =>{
+          .then(() =>{
             this.fetchProjects();
           });
         }
@@ -147,7 +145,6 @@
         axios.delete('/api/project/' + this.project.id)
         .then(() => {
           this.dialog = false;
-
           this.fetchProjects();
         })
       },
