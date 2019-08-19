@@ -79,6 +79,7 @@
   import fancytask from './FancyTask'
   import uud from 'uuid/v4';
   import moment from 'moment';
+  import axios from 'axios';
 
   export default {
     components: {
