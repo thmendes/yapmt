@@ -1,5 +1,6 @@
 # yapmt
-YAPMT - Avaliação
+
+Gerenciador de projetos.
 
 ## Stack
 - Dotnet Api (dotnet core 2.2) / server side
